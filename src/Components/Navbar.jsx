@@ -15,7 +15,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
               <Link to="/">
-                <h1>Ak Zone</h1>
+                <h1 className="text-2xl font-bold">Shop Cart</h1>
               </Link>
             </div>
             {/* <div className="md:block hidden">
@@ -37,78 +37,26 @@ const Navbar = () => {
               <div className="ml-10 flex items-center space-x-1">
                 <Link to="/">
                   <button
-                    className="btn2 text-xs  px-3 py-2 relative border rounded-md text-[#545454] border-[#F5F5F5]  tracking-wider leading-none overflow-hidden hover:text-white"
+                    className="btn2 text-xs  px-6 py-2 relative border rounded-md text-[white] border-[#F5F5F5]  tracking-wider leading-none overflow-hidden hover:text-white"
                     type="button"
                   >
-                    <span className="absolute inset-0 bg-[#004282]"></span>
+                    <span className="absolute inset-0 bg-black"></span>
                     <span className="absolute inset-0 flex justify-center items-center">
                       Home
                     </span>
                     Home
                   </button>
                 </Link>
-
-                <Link to="/Services">
+                <Link to="/cart">
                   <button
-                    className="btn2 text-xs px-3 py-2 relative rounded-md border text-[#545454] border-[#F5F5F5]  tracking-wider leading-none overflow-hidden hover:text-white"
+                    className="btn2 text-xs  px-6 py-2 relative border rounded-md text-[white] border-[#F5F5F5]  tracking-wider leading-none overflow-hidden hover:text-white"
                     type="button"
                   >
-                    <span className="absolute inset-0 bg-[#004282]"></span>
-                    <span className="absolute inset-0 flex justify-center items-center ">
-                      Services
-                    </span>
-                    Services
-                  </button>
-                </Link>
-
-                <Link to="/Our_Work">
-                  <button
-                    className="btn2 text-xs px-3 rounded-md py-2 relative border text-[#545454] border-[#F5F5F5]  tracking-wider leading-none overflow-hidden hover:text-white"
-                    type="button"
-                  >
-                    <span className="absolute inset-0 bg-[#004282]"></span>
+                    <span className="absolute inset-0 bg-black"></span>
                     <span className="absolute inset-0 flex justify-center items-center">
-                      Our Work
+                      Shop
                     </span>
-                    Our Work
-                  </button>
-                </Link>
-
-                <Link to="/Clients">
-                  <button
-                    className="btn2 text-xs px-3 py-2 rounded-md relative border text-[#545454] border-[#F5F5F5]  tracking-wider leading-none overflow-hidden hover:text-white"
-                    type="button"
-                  >
-                    <span className="absolute inset-0 bg-[#004282]"></span>
-                    <span className="absolute inset-0 flex justify-center items-center ">
-                      Clients
-                    </span>
-                    Clients
-                  </button>
-                </Link>
-                {/* <Link to="/about_us">
-                  <button
-                    className="btn2 text-xs px-3 py-2 rounded-md relative border text-[#545454] border-[#F5F5F5]  tracking-wider leading-none overflow-hidden hover:text-white"
-                    type="button"
-                  >
-                    <span className="absolute inset-0 bg-[#004282]"></span>
-                    <span className="absolute inset-0 flex justify-center items-center ">
-                      About Us
-                    </span>
-                    About Us
-                  </button>
-                </Link> */}
-
-                <Link to="/Contact_us">
-                  <button
-                    className="btn2 text-xs px-3 rounded-md py-2 relative border text-[#545454] border-[#F5F5F5]  tracking-wider leading-none overflow-hidden hover:text-white"
-                    type="button"
-                  >
-                    <span className="absolute inset-0 bg-[#004282]"></span>
-                    <span className="absolute inset-0 flex justify-center items-center ">
-                      Contact Us
-                    </span>
-                    Contact Us
+                    Shop
                   </button>
                 </Link>
               </div>
@@ -161,44 +109,16 @@ const Navbar = () => {
             <Link
               onClick={() => setIsOpen(!isOpen)}
               to="/"
-              className="text-[#545454] hover:border-b block px-3 py-2 rounded-md  text-lg font-medium"
+              className="text-[white] hover:border-b block px-3 py-2 rounded-md  text-lg font-medium"
             >
               Home
             </Link>
             <Link
               onClick={() => setIsOpen(!isOpen)}
-              to="/Services"
-              className="text-[#545454] hover:border-b block px-3 py-2 rounded-md  text-lg font-medium"
+              to="/cart"
+              className="text-[white] hover:border-b block px-3 py-2 rounded-md  text-lg font-medium"
             >
               Services
-            </Link>
-            <Link
-              onClick={() => setIsOpen(!isOpen)}
-              to="/Our_Work"
-              className="text-[#545454] hover:border-b block px-3 py-2 rounded-md  text-lg font-medium"
-            >
-              Our Work
-            </Link>
-            <Link
-              onClick={() => setIsOpen(!isOpen)}
-              to="/Clients"
-              className="text-[#545454] hover:border-b block px-3 py-2 rounded-md  text-lg font-medium"
-            >
-              Client
-            </Link>
-            <Link
-              to="/Contact_us"
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-[#545454] hover:border-b block px-3 py-2 rounded-md  text-lg font-medium"
-            >
-              Contact Us
-            </Link>
-            <Link
-              to={"/profile"}
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-[#545454] hover:border-b block px-3 py-2 rounded-md  text-lg font-medium"
-            >
-              Proifle
             </Link>
           </div>
         </div>
